@@ -13,10 +13,7 @@ class SlidingWindow {
 
     static depthChange = 0;
 
-
-
     checkDepth() {
-        console.log(this.currentVals);
         if (this.nextVals.reduce((a, b) => a + b) >this.currentVals.reduce((a, b) => a + b)) {
             SlidingWindow.depthChange++;
         };
