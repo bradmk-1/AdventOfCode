@@ -1,5 +1,5 @@
 
-exports.data = [
+const data = [
     103,
     106,
     107,
@@ -2001,3 +2001,6 @@ exports.data = [
     9538,
     9548,
 ];
+
+
+export default data;

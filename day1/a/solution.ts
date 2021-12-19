@@ -1,8 +1,7 @@
-'use strict';
-const givenData = require('./input');
+import data  from './input';
 
-const measureDepthChange = (input) => {
-    let depthChange = 0;
+const measureDepthChange = (input : Array<number>) : void => {
+    let depthChange : number = 0;
 
     for (let i = 0; i < input.length; i++) {
         if (input[i] > input[i - 1]) {
@@ -13,4 +12,4 @@ const measureDepthChange = (input) => {
 };
 
 
-measureDepthChange(givenData.data);
+measureDepthChange(data);
