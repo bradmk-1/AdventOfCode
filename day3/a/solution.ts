@@ -18,8 +18,6 @@ const binaryDiagnostic = (input : Array<string>) : void => {
             };
         };
 
-        console.log(bitTracker);
-
         if (bitTracker.get(0)! > bitTracker.get(1)!) {
             gammaRate.push(0);
             epsilonRate.push(1)
