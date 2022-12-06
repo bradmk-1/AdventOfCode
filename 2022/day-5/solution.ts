@@ -31,6 +31,8 @@ partOne(parsedInput, stackMap);
 
 //Part Two
 
+const stackMapClone = structuredClone(stackMap)
+
 const partTwo = (input: string[][], stackMap: string[][]) => {
     for (const instruction of input) {
         const toStack = stackMap[Number(instruction[5]) - 1];
@@ -42,6 +44,6 @@ const partTwo = (input: string[][], stackMap: string[][]) => {
     console.log(stackMap.map(crate => crate[0]))
 };
 
-partTwo(parsedInput, stackMap);
+partTwo(parsedInput, stackMapClone);
 
 

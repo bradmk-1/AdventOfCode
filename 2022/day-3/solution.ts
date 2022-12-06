@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-const data = fs.readFileSync('./input.txt', 'utf-8')
+const data = fs.readFileSync('./input.txt', 'utf-8');
 const parsedInput = data.split('\r\n').map((bag: string) => bag.split(' '));
 
 //Part One
@@ -18,7 +18,7 @@ const partOne = (input: string[][]): void => {
 
 partOne(parsedInput);
 
-//Part 2
+//Part Two
 
 const partTwo = (input: string[][]): void => {
     const mask = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
